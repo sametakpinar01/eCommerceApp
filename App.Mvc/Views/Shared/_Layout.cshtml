@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <partial name="Partials/_Head"/>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Humberger Begin -->
+    <partial name="Partials/_Header"/> @* *** *@
+    <!-- Header Section End -->
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>Kategoriler</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Books</a></li>
+                            <li><a href="#">Home & Garden</a></li>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Toys</a></li>
+                            <li><a href="#">Health & Beauty</a></li>
+                            <li><a href="#">Automotive</a></li>
+                            <li><a href="#">Pet Supplies</a></li>
+                            <li><a href="#">Oatmeal</a></li>
+                            <li><a href="#">Food & Beverages</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div>
+
+                        @RenderBody()
+
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->    
+    <!-- Footer Section Begin -->
+    <partial name="Partials/_Footer"/>
+    <!-- Footer Section End -->
+    <!-- Js Plugins -->
+    <partial name="Partials/_JsPlugins"/>
+    
+
+</body>
+</html>

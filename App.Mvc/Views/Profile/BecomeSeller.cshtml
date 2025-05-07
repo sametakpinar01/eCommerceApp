@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Satıcı Olma Talebi";
+}
+@using App.Data.Entities
+@model UserEntity
+
+
+<h2>Satıcı Olmak İstiyorum</h2>
+
+<form asp-action="BecomeSellerRequest" method="post">
+    <p>Satıcı olmak istiyorsanız aşağıdaki butona tıklayın.</p>
+    <button type="submit" class="btn btn-success">Talep Gönder</button>
+</form>
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-info mt-3">@ViewBag.Message</div>
+}

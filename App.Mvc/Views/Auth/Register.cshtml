@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "_Layout";
+}
+<div>
+    <form method="post" asp-controller="Auth" asp-action="Register">
+        <h3>Kayıt ol</h3>
+        <br />
+        <br />
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email :</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Email">
+            <div id="emailHelp" style="color : red; " class="form-text">Email adresi boş bırakılamaz.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Adınız :</label>
+            <input type="text" class="form-control" id="nameİnput" name="FirstName">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Soyadınız :</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="LastName">
+            <div id="emailHelp" class="form-text" ;">Email adresi boş bırakılamaz.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Parola :</label>
+            <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Password">
+            <div id="emailHelp" class="form-text">Güvenlik için özel karakter kullanınız !</div>
+        </div>
+        <button type="submit" class="btn btn-success">Kayıt Ol</button>
+
+    </form>
+
+</div>

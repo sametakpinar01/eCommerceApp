@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="margin-left:50px; margin-right:200px;">
+    <form method="post" asp-controller="Category" asp-action="Create" >
+        <div class="mb-3">
+            <label for="categoryName" class="form-label">Kategori Adı :</label>
+            <input type="text" class="form-control" id="categoryName" name="title">
+
+        </div>
+        <div class="mb-3">
+            <label for="categoryDescription" class="form-label">Kategori Açıklaması :</label>
+            <input type="text" class="form-control" id="categoryDescription" name="description">
+        </div>
+        <div class="mb-3">
+            <label for="categoryIcon" class="form-label">Kategori İkonu :</label>
+            <input type="text" class="form-control" id="categoryIcon" placeholder="fa-?" name="icon">
+        </div>      
+        <button type="submit" class="btn btn-info">Oluştur</button>
+    </form>
+</div>
